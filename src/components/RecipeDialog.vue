@@ -21,10 +21,6 @@ const emit = defineEmits<{
   (e: "close"): void;
 }>();
 
-function close() {
-  emit("close");
-}
-
 const apiKey = ref(secret_key || "");
 </script>
 

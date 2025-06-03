@@ -4,7 +4,7 @@ import { secret_key } from "../config";
 
 const show = defineModel<boolean>({ required: true });
 
-const props = defineProps<{
+defineProps<{
   details: any;
 }>();
 
