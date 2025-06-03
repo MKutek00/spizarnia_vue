@@ -100,14 +100,16 @@ function close() {
             >
               <span style="font-size: 24px">
                 {{
-                  props.categories.find((c) => c.value == localProduct.category)
-                    ?.icon
+                  props.categories.find(
+                    (c) => c.value == localProduct?.category
+                  )?.icon
                 }}
               </span>
               <span class="ml-2">
                 {{
-                  props.categories.find((c) => c.value == localProduct.category)
-                    ?.name
+                  props.categories.find(
+                    (c) => c.value == localProduct?.category
+                  )?.name
                 }}
               </span>
             </v-btn>

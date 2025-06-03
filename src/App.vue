@@ -24,15 +24,6 @@ const bottomNavigation = [
     },
   },
   {
-    name: "Dodaj produkt",
-    icon: "mdi-plus",
-    action: () => {
-      router.push({ name: "view-storage" }).then(() => {
-        bus.emit("open-add-dialog");
-      });
-    },
-  },
-  {
     name: "Głos",
     icon: "mdi-microphone",
     action: () => {
@@ -48,6 +39,13 @@ const bottomNavigation = [
       router.push({ name: "view-storage" }).then(() => {
         bus.emit("open-barcode-dialog");
       });
+    },
+  },
+  {
+    name: "Przepisy",
+    icon: "mdi-chef-hat",
+    action: () => {
+      router.push({ name: "view-recipes" });
     },
   },
   {
